@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js Robot Controller</title>
+
+  <style>
+    body { margin: 0; overflow: hidden; }
+
+    #loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-family: Arial;
+    }
+
+    #nightBtn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 15px;
+      border: none;
+      background: #222;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #nightBtn:hover {
+      background: #555;
+    }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"
+    }
+  }
+  </script>
+
+</head>
+<body>
+
+<div id="loader">Loading: 0%</div>
+
+<!-- ✅ Night Mode Button -->
+<button id="nightBtn">🌙 Night Mode</button>
+
+<script type="module" src="./main.js"></script>
+
+</body>
+</html>
